@@ -114,6 +114,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: mo linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes mo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .problemsolvingImg {
   width: 100%;
@@ -129,11 +140,21 @@ header {
   align-items: start;
   justify-content: center;
   gap: 10px;
+  animation: mr linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes mr {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .featuresSection {
   position: relative;
   margin-top: 20px;
-
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -162,6 +183,19 @@ header {
   border: 2px solid #22222286;
   cursor: pointer;
   transition: 1s;
+  animation: mou linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes mou {
+  from {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .featureBox:hover {
   background-color: var(--secondary-color);
@@ -192,6 +226,18 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  animation: juo linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  animation-delay: 1.5s;
+}
+@keyframes juo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .tinehorizonBoxtitle {
   font-size: 20px;
@@ -217,6 +263,17 @@ section {
   position: relative;
   height: 100%;
   width: 50%;
+  animation: aj linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+@keyframes aj {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .dashboardImg {
   position: relative;

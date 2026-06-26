@@ -2,13 +2,18 @@ import "../style/Home.css";
 import { PiClockCountdownFill } from "react-icons/pi";
 import { FaShield, FaChartArea } from "react-icons/fa6";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function Home() {
   const [loading, setLoading] = useState(false);
   return (
     <>
       <div>
-        <header>
+        <motion.header
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <h1>
             <span
               style={{
@@ -26,9 +31,14 @@ function Home() {
               .
             </span>
           </h1>
-        </header>
+        </motion.header>
         <section className="heroSection">
-          <div className="herosecContainer">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="herosecContainer"
+          >
             <h1 className="heroTitle">
               AI-Powered Space Radiation Forecasting for{" "}
               <span
@@ -89,7 +99,7 @@ function Home() {
                 <button className="ctabutb">Explore ML Architecture</button>
               </a>
             </div>
-          </div>
+          </motion.div>
         </section>
         <section className="problemsolvingSection">
           <div className="problemsolvingContainera">
