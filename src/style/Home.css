@@ -20,7 +20,7 @@ header {
   align-items: start;
   justify-content: center;
   gap: 10px;
-  background-image: url(./herobg.jpg);
+  background-image: url(/herobg.jpg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: contain;
@@ -294,7 +294,7 @@ a {
 }
 @media (max-width: 894px) {
   .heroSection {
-    background-image: url(./herobgb.jpg);
+    background-image: url(/herobgb.jpg);
     background-position-x: none;
   }
   .herosecContainer {
