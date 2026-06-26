@@ -146,10 +146,10 @@ header {
 }
 @keyframes mr {
   from {
-    transform: translateX(500px);
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 .featuresSection {
