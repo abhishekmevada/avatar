@@ -1,8 +1,10 @@
 import "../style/Home.css";
 import { PiClockCountdownFill } from "react-icons/pi";
 import { FaShield, FaChartArea } from "react-icons/fa6";
+import { useState } from "react";
 
 function Home() {
+  const [loading, setLoading] = useState(false);
   return (
     <>
       <div>
@@ -91,9 +93,14 @@ function Home() {
         </section>
         <section className="problemsolvingSection">
           <div className="problemsolvingContainera">
+            {!loading && <div className="skeletonloading"></div>}
             <img
               src="./problemsolimg.png"
               alt="earth"
+              onLoad={() => setLoading(true)}
+              style={{
+                display: loading ? "block" : "none",
+              }}
               className="problemsolvingImg"
             />
           </div>
@@ -317,16 +324,26 @@ function Home() {
           <h1>Our Application Dashboard & Architecture</h1>
           <div className="dashboardContainer">
             <div className="dashboardBox">
+              {!loading && <div className="skeletonloading"></div>}
               <img
                 src="./isrodahboard.png"
                 alt="Avatar"
+                onLoad={() => setLoading(true)}
+                style={{
+                  display: loading ? "block" : "none",
+                }}
                 className="dashboardImg"
               />
             </div>
             <div className="dashboardBox">
+              {!loading && <div className="skeletonloading"></div>}
               <img
                 src="./architecture.png"
                 alt="Avatar"
+                onLoad={() => setLoading(true)}
+                style={{
+                  display: loading ? "block" : "none",
+                }}
                 className="dashboardImg"
               />
             </div>

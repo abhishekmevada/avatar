@@ -255,6 +255,26 @@ footer {
 a {
   width: max-content;
 }
+.skeletonloading {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  animation: jj 1.5s linear infinite;
+}
+@keyframes jj {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1180px) {
   .footerText {
     font-size: 14rem;
